@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chapter 1: What is Cybersecurity?</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(120deg, #1f1f1f, #2a2a2a);
+      color: #f5f5f5;
+    }
+
+    a {
+      color: #ffffff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #00ffe0;
+      text-decoration: underline;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: linear-gradient(to right, #111, #333);
+      border-bottom: 2px solid #444;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      color: #00ffe0;
+    }
+
+    .chapter-meta {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #aaa;
+      margin-bottom: 1rem;
+    }
+
+    .main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .glow-box {
+      border: 2px solid #00ffe0;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+      border-radius: 16px;
+      padding: 2rem;
+      animation: pulse 3s infinite ease-in-out;
+      margin-bottom: 2rem;
+    }
+
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 20px rgba(0, 255, 255, 0.3); }
+      50% { box-shadow: 0 0 35px rgba(0, 255, 255, 0.6); }
+    }
+
+    h2, h3 {
+      color: #00ffe0;
+      margin-top: 1.5rem;
+    }
+
+    .toc {
+      background-color: #2b2b2b;
+      padding: 1rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+    }
+
+    .toc ul {
+      list-style: none;
+      padding-left: 1rem;
+    }
+
+    .toc ul li {
+      padding: 0.25rem 0;
+    }
+
+    .quote {
+      border-left: 4px solid #00ffe0;
+      padding-left: 1rem;
+      margin: 1rem 0;
+      color: #ccc;
+      font-style: italic;
+    }
+
+    pre {
+      background-color: #222;
+      padding: 1rem;
+      border-radius: 10px;
+      overflow-x: auto;
+      color: #00ffe0;
+      font-family: 'Fira Code', monospace;
+    }
+
+    code {
+      font-family: 'Fira Code', monospace;
+      color: #00ffe0;
+    }
+
+    #topBtn, #backBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      font-size: 1.5rem;
+      background-color: #00ffe0;
+      color: #1f1f1f;
+      border: none;
+      border-radius: 50%;
+      padding: 0.6rem 0.75rem;
+      box-shadow: 0 0 10px #00ffe0;
+      z-index: 99;
+      transition: all 0.3s ease;
+    }
+
+    #backBtn {
+      right: 80px;
+    }
+
+    #topBtn:hover, #backBtn:hover {
+      background-color: #0fffff;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
+      padding: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .main { padding: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Chapter 1: What is Cybersecurity?</h1>
+    <div class="chapter-meta">Last updated: May 15, 2025 · Tags: Basics, Terminology</div>
+  </header>
+
+  <div class="main">
+    <!-- Table of contents -->
+    <div class="toc">
+      <h3>Table of Contents</h3>
+      <ul>
+        <li><a href="#intro">1. Introduction</a></li>
+        <li><a href="#importance">2. Why Cybersecurity Matters</a></li>
+        <li><a href="#types">3. Types of Threats</a></li>
+        <li><a href="#summary">4. Summary</a></li>
+      </ul>
+    </div>
+
+    <!-- Section -->
+    <div class="glow-box" id="intro">
+      <h2>1. Introduction</h2>
+      <p>Cybersecurity refers to the protection of systems, networks, and data in cyberspace...</p>
+      <div class="quote">“Security is not a product, but a process.” — Bruce Schneier</div>
+    </div>
+
+    <!-- Section -->
+    <div class="glow-box" id="importance">
+      <h2>2. Why Cybersecurity Matters</h2>
+      <p>In a world increasingly dependent on digital services, cybersecurity helps prevent data breaches, identity theft, and financial loss.</p>
+    </div>
+
+    <!-- Section -->
+    <div class="glow-box" id="types">
+      <h2>3. Types of Threats</h2>
+      <ul>
+        <li>Phishing Attacks</li>
+        <li>Malware</li>
+        <li>Ransomware</li>
+        <li>Zero-day Exploits</li>
+      </ul>
+    </div>
+
+    <!-- Section -->
+    <div class="glow-box" id="summary">
+      <h2>4. Summary</h2>
+      <p>This chapter introduced the foundational ideas of cybersecurity, its importance, and common threats to be aware of.</p>
+      <pre><code>// Example: Simple firewall rule in Linux
+sudo ufw enable
+sudo ufw allow ssh
+sudo ufw status</code></pre>
+    </div>
+  </div>
+
+  <!-- Back & Top buttons -->
+  <a href="index.html" id="backBtn" title="Back to Index">⏎</a>
+  <a href="#" id="topBtn" title="Go to Top">⬆</a>
+
+  <footer>
+    <p>Created with by Mohammad Shaan | Hosted on GitHub Pages</p>
+  </footer>
+
+</body>
+</html>
