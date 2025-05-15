@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cybersecurity Notes | Foundations by Google</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <!-- Base styling -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(120deg, #1f1f1f, #2a2a2a);
+      color: #f5f5f5;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(to right, #111, #333);
+      padding: 2rem 1.5rem;
+      text-align: center;
+      border-bottom: 2px solid #444;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background-color: #2e2e2e;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+    }
+
+    .card h2 {
+      color: #00ffe0;
+      font-family: 'Fira Code', monospace;
+      margin-bottom: 1rem;
+    }
+
+    .card ul {
+      list-style-type: none;
+    }
+
+    .card ul li {
+      padding: 0.5rem 0;
+      font-size: 1rem;
+      border-bottom: 1px solid #444;
+    }
+
+    .card ul li:last-child {
+      border-bottom: none;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    /* Floating glowing cyber border */
+    .glow-box {
+      border: 2px solid #00ffe0;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+      border-radius: 16px;
+      padding: 1.5rem;
+      animation: pulse 3s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 20px rgba(0, 255, 255, 0.3); }
+      50% { box-shadow: 0 0 35px rgba(0, 255, 255, 0.6); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Cybersecurity Notes</h1>
+    <p>Foundations of Cybersecurity - Google Professional Certificate</p>
+  </header>
+
+  <!-- Main content -->
+  <main>
+    <!-- Section 1 -->
+    <div class="card glow-box">
+      <h2>Week 1: Introduction to Cybersecurity</h2>
+      <ul>
+        <li>What is cybersecurity?</li>
+        <li>Basic Terminologies</li>
+        <li>Why it matters: Real-world applications</li>
+        <li>Types of Threats</li>
+      </ul>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="card glow-box">
+      <h2>Week 2: Core Concepts</h2>
+      <ul>
+        <li>Confidentiality, Integrity, Availability (CIA Triad)</li>
+        <li>Authentication vs Authorization</li>
+        <li>Attack Vectors</li>
+        <li>Vulnerabilities vs Threats</li>
+      </ul>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="card glow-box">
+      <h2>Week 3: Careers and Tools</h2>
+      <ul>
+        <li>Types of Cybersecurity Roles</li>
+        <li>Common Tools in the Industry</li>
+        <li>Ethical Hacking Overview</li>
+        <li>Security Operations Center (SOC)</li>
+      </ul>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Created with 💻 by [Your Name] | Hosted on GitHub Pages</p>
+  </footer>
+
+</body>
+</html>
