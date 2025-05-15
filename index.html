@@ -49,6 +49,27 @@ a:hover {
       font-size: 1.2rem;
       color: #ccc;
     }
+    #topBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  font-size: 1.8rem;
+  background-color: #00ffe0;
+  color: #1f1f1f;
+  border: none;
+  border-radius: 50%;
+  padding: 0.5rem 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 0 10px #00ffe0;
+  z-index: 99;
+  transition: all 0.3s ease;
+}
+
+#topBtn:hover {
+  background-color: #0fffff;
+}
+
 
     main {
       padding: 2rem;
@@ -63,6 +84,9 @@ a:hover {
       border-radius: 12px;
       box-shadow: 0 0 15px rgba(0, 255, 255, 0.05);
       transition: transform 0.2s ease;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
     }
 
     .card:hover {
@@ -75,6 +99,21 @@ a:hover {
       font-family: 'Fira Code', monospace;
       margin-bottom: 1rem;
     }
+    .card h2 a {
+  font-family: 'Fira Code', monospace;
+  font-size: 1.2rem;
+  background: rgba(0, 255, 255, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  display: inline-block;
+  color: #00ffe0;
+  letter-spacing: 0.5px;
+}
+    .card h2 a:hover {
+  box-shadow: 0 0 10px #00ffe0;
+  text-decoration: none;
+}
+
 
     .card ul {
       list-style-type: none;
@@ -110,6 +149,12 @@ a:hover {
       0%, 100% { box-shadow: 0 0 20px rgba(0, 255, 255, 0.3); }
       50% { box-shadow: 0 0 35px rgba(0, 255, 255, 0.6); }
     }
+    @media (max-width: 768px) {
+  .card {
+    grid-template-columns: 1fr;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -122,23 +167,54 @@ a:hover {
 
   <!-- Main content -->
   <main>
-    <!-- Section 1 -->
-    <div class="card glow-box">
-      <h2><a href="ch1">1.Foundations of Cybersecurity</h2>
-      <h2><a href="ch2">2. Play It Safe: Manage Security Risks</h2>
-      <h2><a href="ch3">3. Connect and Protect: Networks and Network Security</h2>
-      <h2><a href="ch4">4. Tools of the Trade: Linux and SQL</h2>
-      <h2><a href="ch5">5. Assets, Threats, and Vulnerabilities</h2>
-      <h2><a href="ch6">6. Sound the Alarm: Detection and Response</h2>
-      <h2><a href="ch7">7. Automate Cybersecurity Tasks with Python</h2>
-      <h2><a href="ch8">8. Put it to Work: Prepare for Cybersecuriity Jobs</h2>
-    </div>
+    <div class="glow-box">
+  <h2><a href="ch1">1. Foundations of Cybersecurity</a></h2>
+  <p>Learn what cybersecurity means, why it's important, and how it protects digital assets.</p>
+</div>
+
+<div class="glow-box">
+  <h2><a href="ch2">2. Play It Safe: Manage Security Risks</a></h2>
+  <p>Explore risk management principles and how organizations identify and mitigate cyber threats.</p>
+</div>
+
+<div class="glow-box">
+  <h2><a href="ch3">3. Connect and Protect: Networks and Network Security</a></h2>
+  <p>Understand how networks work, how they're attacked, and how to defend them.</p>
+</div>
+
+<div class="glow-box">
+  <h2><a href="ch4">4. Tools of the Trade: Linux and SQL</a></h2>
+  <p>Learn command-line basics and how cybersecurity professionals use Linux and SQL tools.</p>
+</div>
+
+<div class="glow-box">
+  <h2><a href="ch5">5. Assets, Threats, and Vulnerabilities</a></h2>
+  <p>Define and identify critical assets, common threats, and how vulnerabilities are exploited.</p>
+</div>
+
+<div class="glow-box">
+  <h2><a href="ch6">6. Sound the Alarm: Detection and Response</a></h2>
+  <p>Discover how to detect incidents and respond using logging, monitoring, and alerting tools.</p>
+</div>
+
+<div class="glow-box">
+  <h2><a href="ch7">7. Automate Cybersecurity Tasks with Python</a></h2>
+  <p>Use Python to automate everyday tasks in cybersecurity like scanning, parsing logs, and alerting.</p>
+</div>
+
+<div class="glow-box">
+  <h2><a href="ch8">8. Put it to Work: Prepare for Cybersecurity Jobs</a></h2>
+  <p>Prepare for entry-level cybersecurity roles with resume tips, interview prep, and industry guidance.</p>
+</div>
+
   </main>
 
   <!-- Footer -->
   <footer class="footer">
-    <p>Created with 💻 by Mohammad Shaan | Hosted on GitHub Pages</p>
+    <p>Created with by Mohammad Shaan | Hosted on GitHub Pages</p>
   </footer>
 
 </body>
+  <a href="#" id="topBtn" title="Go to top">⬆</a>
+
 </html>
