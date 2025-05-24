@@ -156,8 +156,8 @@
         <li><a href="#cissp">1. Explore the CISSP Security Domains</a></li>
         <li><a href="#threats">2. Threats, Risks, and Vulnerabilities</a></li>
         <li><a href="#nist">3. NIST’s Risk Management Framework (RMF) </a></li>
-        <li><a href="#common">4.  </a></li>
-        <li><a href="#cissp">5.  </a></li>
+        <li><a href="#frameworks">4. Frameworks</a></li>
+        <li><a href="#controls">5. Controls</a></li>
         <li><a href="#attackers">6.  </a></li>
         <li><a href="#secfrcon">7.  </a></li>
         <li><a href="#secdes">7.1.  </a></li>
@@ -547,23 +547,132 @@
 
 
 
+<div class="glow-box" id="frameworks">
+  <h2>4. Frameworks</h2>
+
+  <ul>
+    <li><strong>Purpose of Frameworks:</strong> Security frameworks provide structured guidelines organizations use to build their own security policies and processes. They help protect against a wide variety of threats, risks, and vulnerabilities.</li>
+
+    <li><strong>Overlap of Protection:</strong> Since physical and virtual threats can impact similar organizational assets, frameworks often address both digital and physical security. For example:
+      <ul>
+        <li><em>Physical access control</em> like badge entry to buildings</li>
+        <li><em>Digital controls</em> such as firewalls or phishing detection protocols</li>
+      </ul>
+    </li>
+
+    <li><strong>Key Use Cases of Frameworks:</strong>
+      <ul>
+        <li><strong>Mitigation of Risks:</strong> Frameworks help prevent and respond to attacks like ransomware and social engineering.</li>
+        <li><strong>Incident Response:</strong> Provide structure for how to detect, respond to, and recover from security breaches.</li>
+        <li><strong>Security Awareness:</strong> Promote employee education and training to reduce human-related threats.</li>
+      </ul>
+    </li>
+
+    <li><strong>Human Factor:</strong> People are often the weakest link in cybersecurity. Frameworks assist in:
+      <ul>
+        <li>Training employees to recognize red flags (e.g., suspicious emails)</li>
+        <li>Encouraging quick reporting and resolution of incidents</li>
+        <li>Increasing awareness to prevent accidental or intentional breaches</li>
+      </ul>
+    </li>
+
+    <li><strong>Your Role as an Analyst:</strong> You will be responsible for understanding and applying your organization's framework-aligned policies. This includes enforcing security rules, supporting awareness efforts, and maintaining both digital and physical safety protocols.</li>
+
+   </ul>
+</div>
+
+
+
+
+<div class="glow-box" id="controls">
+  <h2>5. Controls</h2>
+
+  <ul>
+    <li><strong>Purpose of Controls:</strong> While frameworks help create policies, <em>controls</em> are specific safeguards used to reduce or eliminate identified risks. Without them, organizations risk financial damage and reputational harm from breaches like unauthorized access or fraudulent activity.</li>
+
+    <li><strong>Definition:</strong> Security controls are mechanisms or procedures that reduce the likelihood or impact of threats. They protect sensitive systems and data from being accessed, modified, or stolen.</li>
+
+    <li><strong>Common Types of Security Controls:</strong>
+      <ul>
+        <li><strong>Encryption</strong>: Converts readable data (plaintext) into an unreadable format (ciphertext) to protect confidentiality. Encrypted data must be decrypted before it can be used.</li>
+        <li><strong>Authentication</strong>: Verifies a user's identity before access is granted. Examples:
+          <ul>
+            <li><strong>Username & Password</strong>: Basic login credentials</li>
+            <li><strong>Multi-Factor Authentication (MFA)</strong>: Combines passwords with additional verification like one-time codes or biometrics</li>
+            <li><strong>Biometrics</strong>: Uses physical characteristics like fingerprints or facial scans for identity verification</li>
+          </ul>
+        </li>
+        <li><strong>Authorization</strong>: Determines what level of access a verified user has. Even if authenticated, users must be authorized to access specific data or systems.</li>
+      </ul>
+    </li>
+
+    <li><strong>Real-World Concerns:</strong> Social engineering attacks like <strong>vishing</strong> (voice phishing) may exploit biometric authentication by mimicking a user’s voice to gain unauthorized access.</li>
+
+    <li><strong>Key Takeaway:</strong> Proper implementation of security controls—such as encryption, authentication, and authorization—is essential to reducing risk and protecting organizational assets.</li>
+  </ul>
+</div>
+
+
+
+
+
 <div class="glow-box" id="n">
-      
-  </div>
+  <h2>5.1 The Relationship Between Frameworks and Controls</h2>
 
+  <ul>
+    <li><strong>Overview:</strong> Frameworks and controls work together to reduce organizational risk and ensure compliance with laws and regulations. Frameworks provide the structure and strategy, while controls are the tools used to implement that strategy.</li>
 
+    <li><strong>Security Frameworks:</strong> Guidelines that help organizations build policies and procedures to mitigate data and privacy threats.
+      <ul>
+        <li><strong>Compliance Support:</strong> Frameworks like <strong>HIPAA</strong> (for healthcare) guide secure handling of patient information.</li>
+        <li><strong>NIST RMF & CSF:</strong> Assist in identifying, assessing, and responding to risk systematically.</li>
+      </ul>
+    </li>
 
+    <li><strong>Security Controls:</strong> Safeguards that reduce specific risks. They’re used to enforce framework-driven policies.
+      <ul>
+        <li><strong>Example:</strong> Multi-Factor Authentication (MFA) can serve as a control to comply with HIPAA by verifying user identity before allowing access to sensitive medical records.</li>
+      </ul>
+    </li>
 
-<div class="glow-box" id="n">
-      
-  </div>
+    <li><strong>Important Frameworks:</strong>
+      <ul>
+        <li><strong>Cyber Threat Framework (CTF)</strong>: Developed by the U.S. Office of the Director of National Intelligence to provide a standardized way to describe and communicate cyber threat activity. This improves information sharing and threat response efficiency.</li>
+        <li><strong>ISO/IEC 27001</strong>: An international framework outlining best practices for securing assets like financial records, IP, and employee data. It supports the creation of an Information Security Management System (ISMS).</li>
+      </ul>
+    </li>
 
+    <li><strong>Types of Security Controls:</strong>
+      <ul>
+        <li><strong>Physical Controls</strong>:
+          <ul>
+            <li>Locks, gates, fences</li>
+            <li>Security guards</li>
+            <li>Surveillance (CCTV, motion detectors)</li>
+            <li>Access cards or ID badges</li>
+          </ul>
+        </li>
+        <li><strong>Technical Controls</strong>:
+          <ul>
+            <li>Firewalls</li>
+            <li>Multi-Factor Authentication (MFA)</li>
+            <li>Antivirus software</li>
+          </ul>
+        </li>
+        <li><strong>Administrative Controls</strong>:
+          <ul>
+            <li>Separation of duties</li>
+            <li>Authorization policies</li>
+            <li>Asset classification and labeling</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
 
+    <li><strong>Key Takeaway:</strong> Frameworks guide security planning and regulatory compliance, while controls implement the actual protections. Together, they form a comprehensive security strategy for identifying, managing, and mitigating risk.</li>
+  </ul>
+</div>
 
-
-<div class="glow-box" id="n">
-      
-  </div>
 
 
 
