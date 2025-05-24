@@ -154,8 +154,8 @@
       <h3>Table of Contents</h3>
       <ul>
         <li><a href="#cissp">1. Explore the CISSP Security Domains</a></li>
-        <li><a href="#importance">2. </a></li>
-        <li><a href="#past">3.  </a></li>
+        <li><a href="#threats">2. Threats, Risks, and Vulnerabilities</a></li>
+        <li><a href="#nist">3. NIST’s Risk Management Framework (RMF) </a></li>
         <li><a href="#common">4.  </a></li>
         <li><a href="#cissp">5.  </a></li>
         <li><a href="#attackers">6.  </a></li>
@@ -325,30 +325,224 @@
 
 
 
-<div class="glow-box" id="n">
-      
-  </div>
+<div class="glow-box" id="threats">
+  <h2>2. Threats, Risks, and Vulnerabilities</h2>
+  <ul>
+    <li>Organizations manage a wide range of <strong>assets</strong> — anything with value, including:
+      <ul>
+        <li>Physical items (e.g., office spaces, hardware)</li>
+        <li>Digital data (e.g., customer PII, intellectual property)</li>
+      </ul>
+    </li>
+
+    <li><strong>Threat</strong> — Any circumstance or event that can negatively impact an asset.
+      <ul>
+        <li>Example: <em>Phishing</em> (a social engineering attack) — tricking users via email to disclose private data like credentials or financial info.</li>
+        <li>Other threats: malware, insider attacks, natural disasters.</li>
+      </ul>
+    </li>
+
+    <li><strong>Risk</strong> — The potential that a threat will exploit a vulnerability and harm an asset.
+      <ul>
+        <li>Risk = Threat × Vulnerability</li>
+        <li>Example: No backup strategy = high risk of data loss during a ransomware attack.</li>
+        <li>Risk levels:
+          <ul>
+            <li><strong>Low risk</strong>: Public data (e.g., blog posts, press releases).</li>
+            <li><strong>Medium risk</strong>: Internal documents (e.g., financial reports, internal memos).</li>
+            <li><strong>High risk</strong>: Protected data (e.g., PII, SPII, or intellectual property).</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+    <li><strong>Vulnerability</strong> — A weakness that could be exploited by a threat.
+      <ul>
+        <li>Examples: Outdated software, weak passwords, exposed sensitive data.</li>
+        <li>People can also be vulnerabilities — through negligence or lack of awareness.</li>
+        <li>Note: Both a <em>threat</em> and a <em>vulnerability</em> must exist for a <strong>risk</strong> to be present.</li>
+      </ul>
+    </li>
+
+    <li><strong>Mitigation Strategies for Entry-Level Analysts:</strong>
+      <ul>
+        <li>Educate users to identify threats like phishing emails.</li>
+        <li>Promote strong access controls (e.g., ID cards for physical entry).</li>
+        <li>Encourage reporting of suspicious activity.</li>
+        <li>Regularly audit access to critical assets.</li>
+      </ul>
+    </li>
+
+    <li>Analysts play a key role in reducing risks by identifying vulnerabilities and helping teams respond to threats proactively.</li>
+  </ul>
+  <p>Understanding the relationships between threats, risks, and vulnerabilities helps analysts design better protections for organizational assets and people.</p>
+</div>
 
 
 
 
 <div class="glow-box" id="n">
-      
+      <h2>2.1 Key Impacts of Threats, Risks, and Vulnerabilities</h2>
+  <ul>
+    <li>Security threats like <strong>ransomware</strong> can severely disrupt operations by:
+      <ul>
+        <li>Encrypting data and freezing systems until a ransom is paid.</li>
+        <li>Disrupting business continuity and delaying recovery.</li>
+        <li>Leading to sensitive data exposure on the <em>dark web</em>.</li>
+      </ul>
+    </li>
+
+    <li>The <strong>three major impacts</strong> on organizations include:
+      <ul>
+        <li><strong>1. Financial Losses</strong>
+          <ul>
+            <li>Downtime in production and services.</li>
+            <li>Cost of recovery and remediation.</li>
+            <li>Regulatory fines due to non-compliance.</li>
+          </ul>
+        </li>
+        <li><strong>2. Identity Theft</strong>
+          <ul>
+            <li>Compromise of sensitive PII (e.g., customer, employee, vendor data).</li>
+            <li>Leaked data often sold on the dark web, increasing legal and ethical concerns.</li>
+          </ul>
+        </li>
+        <li><strong>3. Reputational Damage</strong>
+          <ul>
+            <li>Loss of customer trust and loyalty.</li>
+            <li>Bad publicity and possible long-term brand damage.</li>
+            <li>Potential legal action or penalties.</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+    <li>Organizations are urged to implement proactive security protocols to mitigate these impacts, especially in response to threats like ransomware.</li>
+  </ul>
+  <p>Understanding the consequences of threats, risks, and vulnerabilities enables analysts to better safeguard operations and uphold organizational trust and resilience.</p>
+
   </div>
+
+
+
+
+<div class="glow-box" id="nist">
+  <h2>3. NIST’s Risk Management Framework (RMF)</h2>
+  <ul>
+    <li>The <strong>National Institute of Standards and Technology (NIST)</strong> provides widely adopted frameworks for managing cybersecurity risks. One of the most important is the <strong>Risk Management Framework (RMF)</strong>.</li>
+    
+    <li>There are <strong>seven steps</strong> in the RMF. While entry-level analysts may not engage in every step, understanding each is essential:
+      <ol>
+        <li><strong>1. Prepare</strong>
+          <ul>
+            <li>Initial activities to identify and manage risks before an incident occurs.</li>
+            <li>Involves setting objectives and identifying risk-reducing controls.</li>
+          </ul>
+        </li>
+        <li><strong>2. Categorize</strong>
+          <ul>
+            <li>Processes to assess how risks affect the <em>Confidentiality, Integrity, and Availability (CIA)</em> of systems and information.</li>
+            <li>Helps align risk priorities with critical organizational assets.</li>
+          </ul>
+        </li>
+        <li><strong>3. Select</strong>
+          <ul>
+            <li>Choosing appropriate security controls and maintaining up-to-date documentation (e.g., playbooks).</li>
+            <li>Tailors protections to organizational needs.</li>
+          </ul>
+        </li>
+        <li><strong>4. Implement</strong>
+          <ul>
+            <li>Applying the selected security and privacy controls in practice.</li>
+            <li>May include changes to processes like password policies based on observed patterns.</li>
+          </ul>
+        </li>
+        <li><strong>5. Assess</strong>
+          <ul>
+            <li>Evaluating whether controls are implemented correctly and functioning as intended.</li>
+            <li>Identifies weaknesses or inefficiencies that could lead to vulnerabilities.</li>
+          </ul>
+        </li>
+        <li><strong>6. Authorize</strong>
+          <ul>
+            <li>Accepting and being accountable for the risks that remain.</li>
+            <li>Involves creating reports, plans of action, and aligning security goals with business operations.</li>
+          </ul>
+        </li>
+        <li><strong>7. Monitor</strong>
+          <ul>
+            <li>Ongoing surveillance of systems and controls to ensure they continue to meet security objectives.</li>
+            <li>Enables quick response if systems deviate from expected performance or introduce new risks.</li>
+          </ul>
+        </li>
+      </ol>
+    </li>
+
+    <li>Although analysts may not directly implement or authorize procedures, it’s crucial they know how to monitor and verify their effectiveness in protecting the organization and its users.</li>
+  </ul>
+  <p>Familiarity with the RMF gives cybersecurity professionals a structured way to mitigate and manage risks across their organization.</p>
+</div>
+
 
 
 
 
 <div class="glow-box" id="n">
-      
-  </div>
+  <h2>3.1 Manage Common Threats, Risks, and Vulnerabilities</h2>
 
+  <ul>
+    <li><strong>Understanding the threat landscape</strong> is critical for creating policies that prevent and mitigate security issues. Organizations protect both digital and physical assets using strategic frameworks and up-to-date threat intelligence.</li>
 
+    <li><strong>Risk Management Strategies:</strong>
+      <ul>
+        <li><strong>Acceptance</strong>: Accepting certain risks to maintain business continuity.</li>
+        <li><strong>Avoidance</strong>: Developing plans to completely avoid certain risks.</li>
+        <li><strong>Transference</strong>: Passing the risk to a third party (e.g., insurance or outsourced security).</li>
+        <li><strong>Mitigation</strong>: Reducing the impact of known risks through proactive measures.</li>
+      </ul>
+    </li>
 
+    <li><strong>Common Frameworks:</strong>
+      <ul>
+        <li><strong>NIST Risk Management Framework (RMF)</strong></li>
+        <li><strong>Health Information Trust Alliance (HITRUST)</strong></li>
+      </ul>
+    </li>
 
-<div class="glow-box" id="n">
-      
-  </div>
+    <li><strong>Threats:</strong> Events or circumstances that can negatively impact assets.
+      <ul>
+        <li><strong>Insider Threats</strong>: Authorized individuals abusing access.</li>
+        <li><strong>Advanced Persistent Threats (APTs)</strong>: Long-term unauthorized access maintained by threat actors.</li>
+      </ul>
+    </li>
+
+    <li><strong>Risks:</strong> Anything that could affect Confidentiality, Integrity, or Availability (CIA) of assets.
+      <ul>
+        <li><strong>External Risk</strong>: Attacks from outside the organization.</li>
+        <li><strong>Internal Risk</strong>: Malicious or careless insiders.</li>
+        <li><strong>Legacy Systems</strong>: Outdated technologies that remain connected to critical systems.</li>
+        <li><strong>Multiparty Risk</strong>: Risks due to third-party vendors and shared resources.</li>
+        <li><strong>Software Compliance</strong>: Non-compliance or unpatched systems create vulnerabilities.</li>
+      </ul>
+      <p>Refer to the <a href="https://owasp.org/www-project-top-ten/">OWASP Top 10</a> and NIST risk resources for updated threat trends.</p>
+    </li>
+
+    <li><strong>Vulnerabilities:</strong> Weaknesses in systems that can be exploited by threats.
+      <ul>
+        <li><strong>ProxyLogon</strong>: Exploits Microsoft Exchange servers remotely.</li>
+        <li><strong>ZeroLogon</strong>: Exploits Microsoft's Netlogon protocol to bypass authentication.</li>
+        <li><strong>Log4Shell</strong>: Java-based vulnerability that allows remote code execution.</li>
+        <li><strong>PetitPotam</strong>: Exploits NTLM authentication protocols in Windows networks.</li>
+        <li><strong>Security Logging Failures</strong>: Poor monitoring allows undetected attacks.</li>
+        <li><strong>Server-Side Request Forgery (SSRF)</strong>: Manipulates server-side applications to gain unauthorized backend access.</li>
+      </ul>
+      <p>For ongoing updates, visit the <a href="https://nvd.nist.gov/">NIST National Vulnerability Database</a> and <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog">CISA KEV Catalog</a>.</p>
+    </li>
+
+    <li><strong>Key Takeaway:</strong> Security analysts must proactively understand and manage threats, risks, and vulnerabilities. Staying up-to-date with threat intelligence and frameworks ensures stronger defenses and quicker mitigation of cyber threats.</li>
+  </ul>
+</div>
+
 
 
 
