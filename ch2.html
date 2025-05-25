@@ -163,7 +163,7 @@
         <li><a href="#secdes">7.1.  </a></li>
         <li><a href="#confrcom">7.2  </a></li>
         <li><a href="#security-audit">8. Plan and Complete a Security Audit </a></li>
-        <li><a href="#tools">9.  </a></li>
+        <li><a href="#botium-toys-security-summary">9. Botium Toys Security Audit: Summary Report </a></li>
         <li><a href="#prog">10.  </a></li>
         <li><a href="#portfolio">11.  </a></li>
         <li><a href="#glossary">12.  </a></li>
@@ -926,9 +926,87 @@
 
 
 
-<div class="glow-box" id="n">
-      
-  </div>
+<div class="glow-box" id="botium-toys-security-summary">
+  <h2>9. 🔍 Botium Toys Security Audit: Summary Report</h2>
+
+  <h3>📌 Scope of the Audit</h3>
+  <ul>
+    <li>The audit covers the entire security program at Botium Toys, including:</li>
+    <ul>
+      <li>IT-managed assets such as employee devices, on-premises equipment, systems (accounting, ecommerce, inventory, etc.), and internal networks.</li>
+      <li>Data retention and legacy system management.</li>
+      <li>Compliance with regulations like PCI DSS, GDPR, and SOC 1/SOC 2.</li>
+    </ul>
+  </ul>
+
+  <h3>🎯 Goals</h3>
+  <ul>
+    <li>Assess current assets and practices.</li>
+    <li>Evaluate adherence to security controls and compliance best practices.</li>
+    <li>Identify gaps and provide recommendations to improve security posture.</li>
+  </ul>
+
+  <h3>🧱 Current Assets</h3>
+  <ul>
+    <li>End-user and office equipment (laptops, smartphones, etc.).</li>
+    <li>Retail products and warehouse systems.</li>
+    <li>Internal systems and software for business operations.</li>
+    <li>Internal network, storage, internet, and legacy systems.</li>
+  </ul>
+
+  <h3>⚠️ Risk Assessment</h3>
+  <p><strong>Risk Score:</strong> 8/10 (High)</p>
+  <p><strong>Key Issues:</strong></p>
+  <ul>
+    <li>Inadequate access controls (all employees have access to sensitive data).</li>
+    <li>No encryption for customer card data.</li>
+    <li>Weak password policies and no centralized password management.</li>
+    <li>No intrusion detection system (IDS).</li>
+    <li>Lack of disaster recovery plans and data backups.</li>
+    <li>Legacy systems maintained inconsistently.</li>
+  </ul>
+
+  <h3>✅ Compliance Checklist Summary</h3>
+
+  <h4>🧾 PCI DSS — ❌ Not Compliant</h4>
+  <ul>
+    <li>Sensitive credit card data is not encrypted.</li>
+    <li>No access control for cardholder data.</li>
+    <li>Weak password policies.</li>
+  </ul>
+
+  <h4>🇪🇺 GDPR — ⚠️ Partially Compliant</h4>
+  <ul>
+    <li>Policies to notify E.U. customers of breaches are in place.</li>
+    <li>Data is not fully classified/inventoried.</li>
+    <li>Some privacy policies are enforced.</li>
+  </ul>
+
+  <h4>📊 SOC 1/SOC 2 — ⚠️ Partially Compliant</h4>
+  <ul>
+    <li>Some controls for data availability and integrity exist.</li>
+    <li>User access policies and data confidentiality practices are lacking.</li>
+  </ul>
+
+  <h3>✅ Recommendations for the IT Manager</h3>
+  <ul>
+    <li><strong>Implement Least Privilege Access Controls:</strong> Limit access to sensitive data only to authorized personnel.</li>
+    <li><strong>Encrypt All Sensitive and Cardholder Data:</strong> Apply encryption for data at rest and in transit to meet PCI DSS and GDPR.</li>
+    <li><strong>Deploy Centralized Password Management & Strong Policies:</strong> Enforce complexity requirements and reduce recovery issues.</li>
+    <li><strong>Develop a Disaster Recovery and Backup Plan:</strong> Protect business continuity against breaches, system failures, or natural disasters.</li>
+    <li><strong>Install an Intrusion Detection System (IDS):</strong> Monitor network traffic to detect and respond to threats quickly.</li>
+    <li><strong>Inventory and Classify All Digital and Physical Assets:</strong> Support GDPR and SOC compliance with clear data categorization.</li>
+    <li><strong>Regularly Monitor and Maintain Legacy Systems:</strong> Schedule interventions and define procedures for risk mitigation.</li>
+  </ul>
+
+  <h3>🔚 Conclusion</h3>
+  <p>
+    Botium Toys currently lacks critical security controls and compliance mechanisms. Immediate attention to encryption, access management, backups, and monitoring is necessary to reduce the risk of data breaches, compliance violations, and operational disruption. Addressing these vulnerabilities will strengthen Botium Toys’ cybersecurity framework and improve its overall compliance readiness.
+  </p>
+  <embed src="cntrl.pdf" type="Controls and compliance checklist" width="600" height="800" />
+
+</div>
+
 
 
 
