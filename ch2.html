@@ -159,10 +159,10 @@
         <li><a href="#frameworks">4. Frameworks</a></li>
         <li><a href="#controls">5. Controls</a></li>
         <li><a href="#nistfn">6. Core Functions of the NIST Cybersecurity Framework </a></li>
-        <li><a href="#secfrcon">7.  </a></li>
+        <li><a href="#owasp">7.  OWASP Security Principles</a></li>
         <li><a href="#secdes">7.1.  </a></li>
         <li><a href="#confrcom">7.2  </a></li>
-        <li><a href="#ethics">8.  </a></li>
+        <li><a href="#security-audit">8. Plan and Complete a Security Audit </a></li>
         <li><a href="#tools">9.  </a></li>
         <li><a href="#prog">10.  </a></li>
         <li><a href="#portfolio">11.  </a></li>
@@ -786,16 +786,142 @@
 
 
 
-<div class="glow-box" id="n">
-      
-  </div>
+<div class="glow-box" id="owasp">
+  <h2>7. OWASP Security Principles</h2>
+
+  <ul>
+    <li><strong>Overview:</strong> The Open Worldwide Application Security Project® (OWASP) provides foundational security principles to help cybersecurity analysts protect data, reduce risk, and ensure systems remain secure. These principles are used daily in security analysis, monitoring, and incident response tasks.</li>
+
+    <li><strong>Minimize Attack Surface Area:</strong> Reduce potential vulnerabilities by limiting features, access points, and permissions.
+      <ul>
+        <li>Example: Disable unnecessary software functions or require strong passwords to reduce exploitable vectors like phishing or weak credentials.</li>
+      </ul>
+    </li>
+
+    <li><strong>Principle of Least Privilege:</strong> Limit user access to only what’s necessary for their job.
+      <ul>
+        <li>Example: Entry-level analysts can view logs but cannot change user roles or permissions.</li>
+      </ul>
+    </li>
+
+    <li><strong>Defense in Depth:</strong> Use multiple layers of security to reduce risk.
+      <ul>
+        <li>Example: Combine multi-factor authentication, firewalls, intrusion detection, and access controls to block threats at multiple points.</li>
+      </ul>
+    </li>
+
+    <li><strong>Separation of Duties:</strong> No single user should have control over critical processes.
+      <ul>
+        <li>Example: The person authorizing paychecks should not also be the one generating them.</li>
+      </ul>
+    </li>
+
+    <li><strong>Keep Security Simple:</strong> Avoid overly complex security configurations.
+      <ul>
+        <li>Example: Simpler systems are easier to manage and reduce the chance of human error or missed vulnerabilities.</li>
+      </ul>
+    </li>
+
+    <li><strong>Fix Security Issues Correctly:</strong> Identify, contain, and resolve the root cause of issues.
+      <ul>
+        <li>Example: Strengthen password policies if a breach occurs due to weak credentials.</li>
+      </ul>
+    </li>
+
+    <li><strong>Establish Secure Defaults:</strong> Ensure default settings are secure out of the box.
+      <ul>
+        <li>Example: An app should require strong authentication by default, not leave it optional.</li>
+      </ul>
+    </li>
+
+    <li><strong>Fail Securely:</strong> When systems fail, they should default to a secure state.
+      <ul>
+        <li>Example: A firewall failure should block all traffic until it's restored.</li>
+      </ul>
+    </li>
+
+    <li><strong>Don’t Trust Services:</strong> Never assume third-party systems are secure.
+      <ul>
+        <li>Example: Verify data from vendors before using it in critical systems.</li>
+      </ul>
+    </li>
+
+    <li><strong>Avoid Security by Obscurity:</strong> Don’t rely on hidden mechanisms to ensure security.
+      <ul>
+        <li>Example: Don’t depend on source code secrecy alone—employ strong architectures and controls.</li>
+      </ul>
+    </li>
+
+    <li><strong>Key Takeaway:</strong> These OWASP principles guide security analysts in minimizing risk, building resilient systems, and ensuring safe digital practices throughout an organization. Applying them consistently leads to more secure operations and software development.</li>
+  </ul>
+</div>
 
 
 
 
-<div class="glow-box" id="n">
-      
-  </div>
+
+<div class="glow-box" id="security-audit">
+  <h2>8. Plan and Complete a Security Audit</h2>
+
+  <ul>
+    <li><strong>Purpose of Security Audits:</strong> A security audit is a formal review of an organization’s security controls, policies, and procedures to ensure compliance with internal standards and external regulations.</li>
+
+    <li><strong>Types of Audits:</strong>
+      <ul>
+        <li><em>Internal Audits:</em> Conducted by internal security teams to identify risk, assess controls, and improve security posture. Entry-level analysts often contribute to these audits.</li>
+        <li><em>External Audits:</em> Performed by third parties to ensure compliance with external laws and standards.</li>
+      </ul>
+    </li>
+
+    <li><strong>Audit Planning Elements:</strong>
+      <ul>
+        <li><strong>Scope:</strong> Identifies the systems, assets, policies, procedures, and technologies to be assessed.</li>
+        <li><strong>Goals:</strong> Define the security objectives to be achieved, such as compliance with frameworks (e.g., NIST CSF), policy establishment, and system hardening.</li>
+        <li><strong>Risk Assessment:</strong> Determines threats, risks, and vulnerabilities; outlines areas requiring additional controls or compliance measures.</li>
+      </ul>
+    </li>
+
+    <li><strong>Audit Execution Elements:</strong>
+      <ul>
+        <li><strong>Controls Assessment:</strong> Evaluate effectiveness of current controls, categorized into:
+          <ul>
+            <li><em>Administrative Controls:</em> Human-centric policies (e.g., password rules)</li>
+            <li><em>Technical Controls:</em> Technology-based safeguards (e.g., IDS, encryption)</li>
+            <li><em>Physical Controls:</em> Prevent physical access (e.g., locks, surveillance)</li>
+          </ul>
+        </li>
+        <li><strong>Compliance Check:</strong> Verifies adherence to required regulations (e.g., GDPR, PCI DSS).</li>
+        <li><strong>Results Communication:</strong> Findings are summarized and reported to stakeholders, including:
+          <ul>
+            <li>Audit scope and objectives</li>
+            <li>Identified risks and urgency of mitigation</li>
+            <li>Compliance gaps and suggested improvements</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+    <li><strong>Audit Goals and Objectives:</strong> Ensure IT practices meet standards, uncover weaknesses, and drive actionable improvements while avoiding legal or financial penalties.</li>
+
+    <li><strong>Factors Influencing Audits:</strong> Industry type, organization size, geography, government regulation requirements, and voluntary compliance frameworks.</li>
+
+    <li><strong>Role of Frameworks and Controls:</strong> Frameworks like NIST CSF and ISO 27000 support audit readiness. Controls aligned with frameworks help organizations meet compliance requirements and enhance security.</li>
+
+    <li><strong>Audit Checklist Overview:</strong>
+      <ul>
+        <li>Define audit scope (assets, goals, frequency)</li>
+        <li>Evaluate organizational policies and implementation</li>
+        <li>Conduct risk assessment (budget, controls, internal processes)</li>
+        <li>Assess security of listed assets</li>
+        <li>Develop a mitigation plan for addressing risks</li>
+        <li>Report findings and recommendations to stakeholders</li>
+      </ul>
+    </li>
+
+    <li><strong>Your Role as an Analyst:</strong> Entry-level analysts support audit preparation and execution by reviewing scope and goals, analyzing risk assessments, classifying controls, assessing compliance adherence, and helping communicate outcomes.</li>
+  </ul>
+</div>
+
 
 
 
